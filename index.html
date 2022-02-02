@@ -12,11 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/.prettierrc.json" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="prettierrs/prettierrs.json" />
   </head>
   <body>
     <main>
+      <img src="image/spider.jpg" alt="spider" />
       <div class="name-1">
         <!---Коментарий. Нажать <, потом !, потом дефиз 2 раза, и все будет-->
         <h1>Федорова Наталья Викторовна</h1>
@@ -30,16 +31,10 @@
       </div>
       <p>12 сенября <b>1987</b> года</p>
       <nav class="navigation-project">
-        <a
-          class="project"
-          href="https://focused-engelbart-fc6b2e.netlify.app"
-          target="blank"
+        <a class="project" href="https://focused-engelbart-fc6b2e.netlify.app" target="blank"
           >Резюме</a
         >
-        <a
-          class="project"
-          href="https://determined-gates-48b2c5.netlify.app"
-          target="blank"
+        <a class="project" href="https://determined-gates-48b2c5.netlify.app" target="blank"
           >Сайт</a
         >
       </nav>
@@ -72,14 +67,11 @@
             <a href="#непронумерованный-список-ul">Непронумерованный список</a>
           </li>
           <li>
-            <a href="#изучаем-сущность-символов-HTML"
-              >Изучаем сущность символов HTML</a
-            >
+            <a href="#изучаем-сущность-символов-HTML">Изучаем сущность символов HTML</a>
           </li>
         </ul>
       </nav>
       <!-- src, alt, href - это атрибуты-->
-      <img src="img/death-star.png" alt="death-star" width="100" height="100" />
       <section>
         <h2>Парные теги и списки</h2>
         <!--тег img пример одиночного тега, который не несет текстовую нагрузку-->
@@ -87,18 +79,11 @@
         <article>
           <h3 id="изучаем-парные-теги-li">Парные теги. Обозначение.</h3>
           <p>
-            Состоят из открывающего и закрывающего тега, которые оборачивают
-            контент, позволяя изменять его свойства или отображение,
-            группировать по смыслу. Внутри парных тегов могут быть вложены
-            другие теги, как матрёшка.
+            Состоят из открывающего и закрывающего тега, которые оборачивают контент, позволяя
+            изменять его свойства или отображение, группировать по смыслу. Внутри парных тегов могут
+            быть вложены другие теги, как матрёшка.
           </p>
         </article>
-        <img
-          src="img/darth-vader.png"
-          alt="darth-vader"
-          width="120"
-          height="120"
-        />
         <div class="list">
           <h3 id="пронуменрованный-список-ol">Пронуменрованный список</h3>
           <div>
@@ -107,14 +92,13 @@
             <ol start="4" type="I">
               <li class="list-number">
                 <span class="list-item"
-                  >Тег ol атрибут start - c какого числа ничинаеться
-                  список</span
+                  >Тег ol атрибут start - c какого числа ничинаеться список</span
                 >
               </li>
               <li class="list-number">
                 <span class="list-item"
-                  >Тег ol атрибут type - маркер для элементов списка (123, ABC,
-                  abc,I II III, i ii iii iv)</span
+                  >Тег ol атрибут type - маркер для элементов списка (123, ABC, abc,I II III, i ii
+                  iii iv)</span
                 >
               </li>
               <li class="list-number">
@@ -141,9 +125,7 @@
           <h3 id="непронумерованный-список-ul">Непронумерованный список</h3>
           <ul>
             <li class="list-sign">
-              <span class="list-item"
-                >Теги li оборачиваються в тег ul.Param</span
-              >
+              <span class="list-item">Теги li оборачиваються в тег ul.Param</span>
             </li>
             <li class="list-sign">
               <span class="list-item">Теги li оборачиваються в тег ul</span>
@@ -155,15 +137,11 @@
         </div>
         <!--сущность символов-->
         <div class="character-entities">
-          <h2 id="изучаем-сущность-символов-HTML">
-            Изучаем сущность символов HTML
-          </h2>
+          <h2 id="изучаем-сущность-символов-HTML">Изучаем сущность символов HTML</h2>
           <ul>
             <li><b>&#34;</b><span> двойные кавычки</span></li>
             <li><b>&#8364;</b><span> евро</span></li>
-            <li>
-              <b>&#174;</b><span> зарегистрированная торговая марка</span>
-            </li>
+            <li><b>&#174;</b><span> зарегистрированная торговая марка</span></li>
           </ul>
           <p>
             Чтобы отобразить знак меньше чем (&lt;) мы должны писать:
@@ -176,26 +154,22 @@
           </p>
         </div>
         <p>
-          Преимущество использования сущности имен: имя сущности легко
-          запомнить. Недостатком использования наименования имени сущности:
-          браузеры могут поддерживать не все сущности имен, но поддержка чисел
-          хорошая.
+          Преимущество использования сущности имен: имя сущности легко запомнить. Недостатком
+          использования наименования имени сущности: браузеры могут поддерживать не все сущности
+          имен, но поддержка чисел хорошая.
         </p>
         <!--тег lorem10 вставляет текст-болванку (текст-рыба). Цифра - количество слов, может быть любое-->
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-          corporis illo velit illum non repellendus ab, laboriosam debitis
-          pariatur facere voluptatum enim impedit. Nam, deleniti.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corporis illo velit
+          illum non repellendus ab, laboriosam debitis pariatur facere voluptatum enim impedit. Nam,
+          deleniti.
         </p>
       </section>
       <div>
         <h4>Изображение-ссылка.</h4>
         <figure>
           <!--Абсолютный путь-->
-          <a
-            href="https://www.pexels.com/photo/animals-sweet-cat-kitty-57416/"
-            target="blank"
-          >
+          <a href="https://www.pexels.com/photo/animals-sweet-cat-kitty-57416/" target="blank">
             <img
               src="https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?w=640"
               alt="Рыжий кот"
@@ -204,22 +178,6 @@
           </a>
           <figcaption>Пример из материалов</figcaption>
         </figure>
-        <figure>
-          <!--Относительный путь-->
-          <figcaption>Мой пример. Тег перед ссылкой и картинкой</figcaption>
-          <a
-            href="http://www.mirkrasiv.ru/nature/pauk-pavlin-maratus-volans-samyi-krasivyi-pauk-v-mire.html"
-            target="blank"
-          >
-            <img
-              class="spider-img"
-              src="img/spider.jpg"
-              alt="spider"
-              width="450"
-              height="300"
-            />
-          </a>
-        </figure>
       </div>
     </main>
     <footer>
@@ -227,22 +185,13 @@
         <h4>Социальные сети (вариант 1)</h4>
         <ul>
           <li>
-            <a href="https://www.youtube.com/" target="blank">
-              YouTube
-              <img src="img/YouTube.png.png" alt="Логотип YouTube"
-            /></a>
+            <a href="https://www.youtube.com/" target="blank"> YouTube</a>
           </li>
           <li>
-            <a href="https://twitter.com/?lang=ru" target="blank">
-              Twitter
-              <img src="img/twitter.png.png" alt="Логотип Twitter"
-            /></a>
+            <a href="https://twitter.com/?lang=ru" target="blank"> Twitter</a>
           </li>
           <li>
-            <a href="https://www.instagram.com/_nf1287_/" target="blank">
-              Instagram
-              <img src="img/ins.png.png" alt="Логотип Instagram"
-            /></a>
+            <a href="https://www.instagram.com/_nf1287_/" target="blank"> Instagram</a>
           </li>
         </ul>
       </div>
@@ -250,11 +199,7 @@
         <h4>Социальные сети (вариант 2)</h4>
         <div class="social-blok">
           <div class="social-link">
-            <a
-              href="https://www.youtube.com/"
-              class="social-link"
-              target="_blank"
-            >
+            <a href="https://www.youtube.com/" class="social-link" target="_blank">
               <svg
                 width="20"
                 height="14"
@@ -270,11 +215,7 @@
             </a>
           </div>
           <div class="social-link">
-            <a
-              href="https://twitter.com/?lang=ru"
-              class="social-link"
-              target="_blank"
-            >
+            <a href="https://twitter.com/?lang=ru" class="social-link" target="_blank">
               <svg
                 width="22"
                 height="17"
@@ -290,11 +231,7 @@
             </a>
           </div>
           <div class="social-link">
-            <a
-              href="https://www.instagram.com/_nf1287_/"
-              class="social-link"
-              target="_blank"
-            >
+            <a href="https://www.instagram.com/_nf1287_/" class="social-link" target="_blank">
               <svg
                 width="20"
                 height="20"

@@ -35,9 +35,7 @@ body {
 .list-item {
   color: rgb(23, 21, 41);
 }
-.spider-img {
-  background-image: url('../img/spider.jpg');
-}
+
 .social {
   margin-left: 40px;
 }
