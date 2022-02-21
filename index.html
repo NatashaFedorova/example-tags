@@ -3,30 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <!--тег meta пример одиночного тега, который не несет текстовую нагрузку-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>example-tags</title>
+    <style type="text/css">
+      h2 {
+        color: chartreuse;
+      }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="prettierrs/prettierrs.json" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./prettierrs/prettierrs.json" />
   </head>
   <body>
     <main>
-      <img src="image/spider.jpg" alt="spider" />
+      <img src="./image/spider.jpg" alt="spider" />
       <div class="name-1">
         <!---Коментарий. Нажать <, потом !, потом дефиз 2 раза, и все будет-->
-        <h1>Федорова Наталья Викторовна</h1>
+        <h1 id="title">Федорова Наталья Викторовна</h1>
       </div>
       <div class="name-2">
         <!-- 
-          Коментарий может многострочным. 
-          Для удобства обрботки информации
-        -->
+					Коментарий может многострочным. 
+					Для удобства обрботки информации
+				-->
         <h4>Начинающий разработчик</h4>
       </div>
       <p>12 сенября <b>1987</b> года</p>
@@ -179,11 +184,182 @@
           <figcaption>Пример из материалов</figcaption>
         </figure>
       </div>
+      <!-- пример таблицы 1-->
+      <table>
+        <caption>
+          мои достижения
+        </caption>
+        <thead>
+          <tr>
+            <th rowspan="2">job</th>
+            <th colspan="2">навыки</th>
+          </tr>
+          <tr>
+            <th>soft</th>
+            <th>tech</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>первая работа</td>
+            <td>ппппппп</td>
+            <td>ооооооо</td>
+          </tr>
+          <tr>
+            <td>вторая работа</td>
+            <td>wwwww</td>
+            <td>eeeeee</td>
+          </tr>
+          <tr>
+            <td>третья рабоа</td>
+            <td>wwwww</td>
+            <td>eeeeee</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- пример таблицы 2 -->
+      <table>
+        <tr>
+          <th>Оглавление 1</th>
+          <th>Оглавление 2</th>
+          <th>Оглавление 3</th>
+        </tr>
+        <tr>
+          <td>Строка 2</td>
+          <td>Строка 2</td>
+          <td>Строка 2</td>
+        </tr>
+        <tr>
+          <td>Строка 3</td>
+          <td>Строка 3</td>
+          <td>Строка 3</td>
+        </tr>
+        <tr>
+          <td>Строка 4</td>
+          <td>Строка 4</td>
+          <td>Строка 4</td>
+        </tr>
+      </table>
+      <!-- пример таблицы 3 -->
+      <table>
+        <caption>
+          <b>Отслеживаем активность</b>
+        </caption>
+        <thead>
+          <tr>
+            <th>/</th>
+            <th>активность</th>
+            <th>отдых</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>январь</td>
+            <td>29</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>февряль</td>
+            <td>18</td>
+            <td>10</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Итог</td>
+            <td>47</td>
+            <td>12</td>
+          </tr>
+        </tfoot>
+      </table>
+      <dl>
+        <dt>Lorem, ipsum dolor.</dt>
+        <dd>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eligendi assumenda
+          delectus architecto suscipit sapiente!
+        </dd>
+        <dt>Lorem, ipsum dolor.</dt>
+        <dd>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eligendi assumenda
+          delectus architecto suscipit sapiente!
+        </dd>
+      </dl>
+      <pre style="color: aqua">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat commodi, exercitationem eveniet fugit ullam eos?
+      </pre>
+      <pre>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat commodi, exercitationem eveniet fugit ullam eos?
+      </pre>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/3sUlf8np4Es"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <section>
+        <h2 class="title">Пример приминения нескольких класов к одному тегу</h2>
+        <ul class="list">
+          <li>
+            <p class="alert error">error - статус ошибки</p>
+            <p class="alert warning">warning — статус предупреждения</p>
+          </li>
+          <li>
+            <p class="alert success">success — статус успешного выполнения задачи</p>
+            <p class="alert pending">
+              pending — состояние ожидания, например, перед сменой статуса на error или success
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>Селектор ребенка</h3>
+        <ul class="menu">
+          <li>
+            <p>что такое работа на дому?</p>
+            <ul class="submenu">
+              <h4>работа на дому</h4>
+              <li>вышивка</li>
+              <li>разработка</li>
+            </ul>
+          </li>
+          <li>
+            <p>что такое работа вне дома?</p>
+            <ul class="submenu">
+              <h4>работа в не дома</h4>
+              <li>магазин</li>
+              <li>офис</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>Селектор атрибута</h3>
+        <ul>
+          <li>
+            <a href="https://natashafedorova.github.io/example-tags/" title="прейти по ссылке"
+              >мой примет тегов</a
+            >
+          </li>
+          <li>
+            <a href="https://natashafedorova.github.io/goit-markup-hw-01/" title="прейти по ссылке"
+              >Домашнее задание 1</a
+            >
+          </li>
+          <li>
+            <a href="https://natashafedorova.github.io/goit-markup-hw-02/" title="прейти по ссылке"
+              >Домашнее задание 2</a
+            >
+          </li>
+        </ul>
+      </section>
     </main>
     <footer>
-      <div>
+      <section>
         <h4>Социальные сети (вариант 1)</h4>
-        <ul>
+        <ul class="social-link-option-first">
           <li>
             <a href="https://www.youtube.com/" target="blank"> YouTube</a>
           </li>
@@ -194,7 +370,7 @@
             <a href="https://www.instagram.com/_nf1287_/" target="blank"> Instagram</a>
           </li>
         </ul>
-      </div>
+      </section>
       <div class="social">
         <h4>Социальные сети (вариант 2)</h4>
         <div class="social-blok">
@@ -253,6 +429,7 @@
         <a href="tel:+380673008282">+38-067-300-82-82</a>
         <a href="mailto:dyadyafedor1287@gmail.com">Dyadyafedor1287@gmail.com</a>
       </section>
+      <a href="#title">вернуться в начало страницы</a>
     </footer>
   </body>
 </html>

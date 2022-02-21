@@ -50,3 +50,44 @@ body {
   flex-direction: row;
   width: 100%;
 }
+a {
+  text-decoration: none;
+}
+.alert {
+  text-decoration: underline;
+}
+.error {
+  color: red;
+}
+.warning {
+  color: orange;
+}
+.success {
+  color: green;
+}
+.pending {
+  color: lightskyblue;
+}
+#title {
+  font-weight: 500;
+  color: rgb(255, 127, 80);
+}
+.social-link-option-first a {
+  color: rgb(223, 10, 10);
+}
+.menu > li {
+  color: rgb(28, 162, 172);
+}
+.submenu > li {
+  color: #e22bca;
+}
+.submenu > h4 {
+  color: chartreuse;
+}
+a[title] {
+  color: blueviolet;
+}
+a[href="https://natashafedorova.github.io/example-tags/"]
+{
+  color: rgb(13, 231, 60);
+}
