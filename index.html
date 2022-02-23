@@ -23,10 +23,10 @@
   <body>
     <main>
       <img src="./image/spider.jpg" alt="spider" />
-      <div class="name-1">
+      <section class="section">
         <!---Коментарий. Нажать <, потом !, потом дефиз 2 раза, и все будет-->
-        <h1 id="title">Федорова Наталья Викторовна</h1>
-      </div>
+        <h1 class="section-title">Федорова Наталья Викторовна</h1>
+      </section>
       <div class="name-2">
         <!-- 
 					Коментарий может многострочным. 
@@ -355,6 +355,127 @@
           </li>
         </ul>
       </section>
+      <section>
+        <h2>Псевдокласс</h2>
+        <p>
+          Селекторы состояния используются для применения стилей к интерактивным элементам при
+          определённом событии, например наведении курсора по ссылке или фокусировке с клавиатуры.
+        </p>
+        <p>
+          Псевдокласс определяет конкретное состояние элемента и прикреплён к селектору тега, класса
+          и т. п. Пробела между селектором и псевдоклассом нет, чтобы показать, что они связаны друг
+          с другом. Если добавить пробел, то псевдокласс применится ко всем элементам в документе.
+        </p>
+        <ul>
+          <li>
+            <h3>Псевдокласс :hover</h3>
+            <p>
+              Отличная игра для закрепления знаний
+              <a class="link" href="https://cssgridgarden.com/#ua">по ссылке</a>.
+            </p>
+            <h4>Приминени :hover к контектсным селекторам</h4>
+            <ul class="list-music-link">
+              <li>
+                <a class="music-link" href="https://www.youtube.com/watch?v=6Vs6tExC-Go"
+                  >Kaleo - Skinny</a
+                >
+              </li>
+              <li>
+                <a class="music-link" href="https://www.youtube.com/watch?v=Da5qQD_RpEQ"
+                  >KALEO - Vor í Vaglaskógi</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Псевдокасс :focus</h3>
+            <ul class="list-shop-link">
+              <li><a class="shop-link" href="https://delamark.ua/ru">De La Mark</a></li>
+              <li><a class="shop-link" href="https://rozetka.com.ua/">Rozetka</a></li>
+            </ul>
+          </li>
+          <li>
+            <h3>Псевдокасс :active</h3>
+            <ul class="second-list-music-link">
+              <li>
+                <a class="second-music-link" href="https://www.youtube.com/watch?v=OSye8OO5TkM"
+                  >Hozier - Movement</a
+                >
+              </li>
+              <li>
+                <a class="second-music-link" href="https://www.youtube.com/watch?v=PVjiKRfKpPI"
+                  >Hozier - Take Me To Church</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Псевдокласс :visited</h4>
+            <ul class="list-visited">
+              <li>
+                <a class="list-link-visited" href="https://www.edu.goit.global/ru/profile"
+                  >Программа LMS</a
+                >
+              </li>
+              <li>
+                <a class="list-link-visited" href="https://github.com/NatashaFedorova">GitHub</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Работа с цветом</h2>
+        <ul>
+          <li class="text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, culpa.
+          </li>
+          <li class="text-color-rgb">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, culpa.
+          </li>
+          <li class="text-hexademical">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, culpa.
+          </li>
+          <li class="text-color-alpha">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, culpa.
+          </li>
+        </ul>
+      </section>
+      <article>
+        <h2>Селекторы 4 ранга</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, commodi. Ab quos veritatis
+          asperiores nemo, nam aliquam sint veniam molestias, molestiae nulla, voluptate id sed.
+        </p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+        <a href="">Читать дальше...</a>
+      </article>
+      <article class="post">
+        <h2 class="post-title" id="title">Селекторы 3 ранга</h2>
+        <p style="color: green">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptate quis natus
+          sequi vel recusandae, tenetur iusto odit sapiente eius.
+        </p>
+        <p class="text-inherit">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, quibusdam. Neque,
+          quibusdam. Ullam quos culpa accusantium! Nesciunt dolor cum sunt dolorem quasi vero
+          voluptatum <a class="text-link-inherit" href="">exem</a>.
+        </p>
+        <p class="text-currentcolor">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, quibusdam. Neque,
+          quibusdam. Ullam quos culpa accusantium! Nesciunt dolor cum sunt dolorem quasi vero
+          voluptatum <a class="section" href="">exem</a>.
+        </p>
+        <a href="">Читать дальше...</a>
+        <ul class="post-list">
+          <li class="post-item">Lorem ipsum dolor sit amet.</li>
+          <li class="post-item">Lorem ipsum dolor sit amet.</li>
+        </ul>
+      </article>
+      <h3 class="example-title">Пробуем переменную</h3>
     </main>
     <footer>
       <section>
@@ -372,7 +493,7 @@
         </ul>
       </section>
       <div class="social">
-        <h4>Социальные сети (вариант 2)</h4>
+        <h4 style="color: aqua">Социальные сети (вариант 2)</h4>
         <div class="social-blok">
           <div class="social-link">
             <a href="https://www.youtube.com/" class="social-link" target="_blank">

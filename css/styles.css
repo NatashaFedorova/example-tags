@@ -1,3 +1,6 @@
+:root {
+  --brand-color: aqua;
+}
 html,
 body {
   width: 100%;
@@ -90,4 +93,96 @@ a[title] {
 a[href="https://natashafedorova.github.io/example-tags/"]
 {
   color: rgb(13, 231, 60);
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+.link:hover {
+  color: violet;
+}
+.list-music-link .music-link {
+  color: black;
+}
+.list-music-link .music-link:hover {
+  color: sandybrown;
+}
+.list-shop-link .shop-link {
+  color: aqua;
+}
+.list-shop-link .shop-link:hover,
+.list-shop-link .shop-link:focus {
+  color: #e22bca;
+}
+.second-list-music-link {
+  color: black;
+}
+.second-list-music-link .second-music-link {
+  color: black;
+}
+.second-list-music-link .second-music-link:hover,
+.second-list-music-link .second-music-link:focus {
+  color: yellow;
+}
+.second-list-music-link .second-music-link:active {
+  color: red;
+}
+.list-visited .list-link-visited {
+  color: black;
+  cursor: pointer;
+}
+.list-visited .list-link-visited:hover .list-active .list-link-visited:focus {
+  color: aqua;
+  cursor: pointer;
+}
+.list-visited .list-link-visited:active {
+  color: red;
+  cursor: wait;
+}
+.list-visited .list-link-visited:visited {
+  color: rgb(228, 27, 194);
+}
+.text {
+  background-color: blue;
+  color: #fff;
+}
+.text-color-rgb {
+  color: rgb(255, 0, 0);
+}
+.text-hexademical {
+  color: #e22bca;
+}
+.text-color-alpha {
+  color: rgba(200, 10, 45, 0.4);
+}
+article {
+  color: darkorchid;
+}
+article > p {
+  color: aqua;
+}
+article > ul > li {
+  color: gold;
+}
+.post .post-list .post-item {
+  color: darkgreen;
+}
+#title {
+  color: cornflowerblue !important;
+}
+.text-link-inherit {
+  color: inherit;
+}
+.text-link-currentcolor {
+  color: currentColor;
+}
+.section-title {
+  color: var(--brand-color);
+}
+/* не работает фолбэк */
+.section-title::before {
+  background-color: var(--brand-color, yellow);
+}
+.example-title {
+  color: var(--brand-color, violet);
 }
