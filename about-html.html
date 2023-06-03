@@ -26,8 +26,10 @@
       <div class="container">
         <nav>
           <ul class="nav-list">
-            <li><a class="nav-link" href="/index.html">Home</a></li>
-            <li><a class="nav-link" href="/about-html.html">HTML</a></li>
+            <li><a class="nav-link" href="./index.html">Home</a></li>
+            <li>
+              <a class="nav-link active" href="./about-html.html">HTML</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -204,6 +206,78 @@
               Be less curious about people and more curious about ideas.
             </blockquote>
           </figure>
+        </div>
+      </section>
+      <section class="section-page">
+        <div class="container">
+          <h2 class="title">canvas</h2>
+          <p>Defines an element where you can draw graphics.</p>
+          <br />
+          <p>Example</p>
+          <canvas style="background-color: brown" width="60" height="60">
+            Fallback text for non-supported browsers
+          </canvas>
+        </div>
+      </section>
+      <section class="section-page">
+        <div class="container">
+          <h2 class="title">caption, table, thead, tbody, tfoot, tr, th td</h2>
+          <p><b>caption</b> - defines the title of a table.</p>
+          <p><b>table</b> - defines a container for tabular data.</p>
+          <p>
+            <b>thead</b> - defines a group of table rows tr (tag) at the start
+            of a table.
+          </p>
+          <p><b>tbody</b> - defines a group of table rows tr(tag)</p>
+          <p>
+            <b>tfoot</b> - defines a set of rows summarizing the columns of the
+            table.
+          </p>
+          <p><b>tr</b> - defines a row of cells in a table</p>
+          <p>
+            <b>th</b> - defines a cell as the header of a group of table cells
+          </p>
+          <p><b>td</b> - defines a cell of a table that contains data</p>
+          <br />
+          <p>Example</p>
+          <table class="table">
+            <caption>
+              Salary
+            </caption>
+            <thead>
+              <tr>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Sum</th>
+              </tr>
+              <tr>
+                <th>Main</th>
+                <th>Premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ted</td>
+                <td>1000</td>
+                <td>500</td>
+              </tr>
+              <tr>
+                <td>Jack</td>
+                <td>1500</td>
+                <td>500</td>
+              </tr>
+              <tr>
+                <td>Enn</td>
+                <td>2000</td>
+                <td>500</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Total</td>
+                <td colspan="2">6000</td>
+              </tr>
+            </tfoot>
+          </table>
         </div>
       </section>
     </main>

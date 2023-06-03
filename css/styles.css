@@ -64,6 +64,11 @@ img {
 .nav-link {
   color: #fafafa;
 }
+
+.nav-link.active {
+  color: #ff6702;
+}
+
 .nav-link:hover,
 .nav-link:focus {
   color: #ff6702;
@@ -97,4 +102,15 @@ img {
 
 .site-bar > p {
   margin: 0.5rem;
+}
+
+.table {
+  border: 1px solid #303030;
+}
+
+td,
+th {
+  text-align: center;
+  border: 1px solid #303030;
+  padding: 5px 10px;
 }
