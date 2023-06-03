@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./prettierrs/prettierrs.json" />
+    <title>about-html</title>
+  </head>
+  <body>
+    <header class="header-page">
+      <div class="container">
+        <nav>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="/index.html">Home</a></li>
+            <li><a class="nav-link" href="/about-html.html">HTML</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-page">
+      <section class="section-page">
+        <div class="container">
+          <h1 class="title">Some tags</h1>
+          <p>
+            A <b>Tag</b> is an element of the Hypertext Markup Language. These
+            are the smallest building blocks that make up any web page. Each tag
+            indicates an item: heading, list, text paragraph, image.
+          </p>
+          <a
+            class="link"
+            href="https://htmlreference.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Read more about all elements and attributes</a
+          >
+        </div>
+      </section>
+      <section class="section-page">
+        <div class="container">
+          <h2>abbr</h2>
+          <p>
+            Defines an abbreviation, and usually includes its full description.
+          </p>
+          <p>Displays the full description when hovering the element.</p>
+          <p>
+            <abbr title="HyperText Markup Language">HTML</abbr>
+          </p>
+        </div>
+      </section>
+      <section class="section-page">
+        <div class="container">
+          <h2>area</h2>
+          <p>Defines an interactive area within a map</p>
+          <a
+            class="link"
+            href="https://css.in.ua/html/tag/area/coords"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Read about coords</a
+          >
+          <img
+            src="/image/world-continents.png"
+            width="320"
+            height="160"
+            orgwidth="320"
+            orgheight="160"
+            usemap="#world-continents"
+          />
+          <map name="world-continents">
+            <area
+              title="North America"
+              href="https://en.wikipedia.org/wiki/North_America"
+              shape="poly"
+              coords="48,89,67,69,77,49,140,0,68,0,6,10,4,31,16,69"
+              target="_blank"
+            />
+            <area
+              title="South America"
+              href="https://en.wikipedia.org/wiki/South_America"
+              shape="poly"
+              coords="48,88,61,74,119,99,95,160,66,159"
+              target="_blank"
+            />
+            <area
+              title="Europe"
+              href="https://en.wikipedia.org/wiki/Europe"
+              shape="poly"
+              coords="124,49,145,46,158,50,187,43,198,6,146,1,115,21"
+              target="_blank"
+            />
+            <area
+              title="Africa"
+              href="https://en.wikipedia.org/wiki/Africa"
+              shape="poly"
+              coords="121,53,140,47,169,51,186,77,196,80,188,137,156,136,138,97,118,86"
+              target="_blank"
+            />
+            <area
+              title="Asia"
+              href="https://en.wikipedia.org/wiki/Asia"
+              shape="poly"
+              coords="166,50,184,77,201,74,215,91,258,108,263,87,283,74,297,8,192,3,191,29,187,46,170,42"
+              target="_blank"
+            />
+            <area
+              title="Australia"
+              href="https://en.wikipedia.org/wiki/Australia_(continent)"
+              shape="poly"
+              coords="257,107,263,85,314,89,316,137,294,151,249,132,248,114"
+              target="_blank"
+            />
+          </map>
+        </div>
+      </section>
+      <section class="section-page">
+        <div class="container">
+          <h2>aside</h2>
+          <p>
+            Defines a block of content that is related to the main content.
+            Displayed as a sidebar usually.
+          </p>
+          <br />
+          <p>Example</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+            obcaecati, eius beatae veniam neque corporis consequuntur delectus,
+            est voluptatum, quidem recusandae consequatur iusto voluptatem
+            maiores earum ullam repudiandae ea doloremque?
+          </p>
+          <aside class="site-bar">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </aside>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            delectus rerum dolorem dolore, harum facere temporibus magni
+            eligendi, beatae aspernatur accusantium alias voluptatum rem illo
+            similique eos ratione. Possimus, quia.
+          </p>
+        </div>
+      </section>
+      <section class="section-page">
+        <div class="container">
+          <h2 class="title">audio</h2>
+          <audio src="/assets/audio.mp3" controls muted preload></audio>
+        </div>
+      </section>
+      <section class="section-page">
+        <div class="container">
+          <h2 class="title">base</h2>
+          <p>
+            Defines the base URL for all <b>relative</b> relative links of a web
+            page. Should be placed in the tag head
+          </p>
+        </div>
+      </section>
+      <section class="section-page">
+        <div class="container">
+          <h2 class="title">bdi - bidirectional isolation</h2>
+          <p>Allows to display part of a text in the opposite direction.</p>
+          <br />
+          <p>Example</p>
+          <p>
+            The word <b><bdi>שלום</bdi></b> means "Hello" in Hebrew
+          </p>
+        </div>
+      </section>
+      <section class="section-page">
+        <div class="container">
+          <h2 class="title">bdo</h2>
+          <p>Allows to override the direction of text.</p>
+          <br />
+          <p>Example</p>
+          <p>
+            The word <bdo dir="rtl">Hello</bdo> is "Hello" spelled backwards.
+          </p>
+          <p>
+            The word <bdo dir="ltr">Hello</bdo> is "Hello" spelled backwards.
+          </p>
+        </div>
+      </section>
+      <section class="section-page">
+        <div class="container">
+          <h2 class="title">blockquote</h2>
+          <p>Defines a long quotation.</p>
+          <br />
+          <p>Example</p>
+          <figure>
+            <blockquote cite="https://en.wikiquote.org/wiki/Marie_Curie">
+              Be less curious about people and more curious about ideas.
+            </blockquote>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-page">
+      <div class="container">
+        <p>Footer</p>
+      </div>
+    </footer>
+  </body>
+</html>
