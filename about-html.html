@@ -4,6 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./image/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./image/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./image/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./image/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./image/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +50,7 @@
     <header class="header-page">
       <div class="container">
         <nav>
-          <ul class="nav-list">
+          <ul class="nav-list list">
             <li><a class="nav-link" href="./index.html">Home</a></li>
             <li>
               <a class="nav-link active" href="./about-html.html">HTML</a>
@@ -35,7 +60,7 @@
       </div>
     </header>
     <main class="main-page">
-      <section class="section-page">
+      <section class="about-tags">
         <div class="container">
           <h1 class="title">Some tags</h1>
           <p>
@@ -52,342 +77,771 @@
           >
         </div>
       </section>
-      <section class="section-page">
+      <section class="tags">
         <div class="container">
-          <h2>abbr</h2>
-          <p>
-            Defines an abbreviation, and usually includes its full description.
-          </p>
-          <p>Displays the full description when hovering the element.</p>
-          <p>
-            <abbr title="HyperText Markup Language">HTML</abbr>
-          </p>
-        </div>
-      </section>
-      <section class="section-page">
-        <div class="container">
-          <h2>area</h2>
-          <p>Defines an interactive area within a map</p>
-          <a
-            class="link"
-            href="https://css.in.ua/html/tag/area/coords"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Read about coords</a
-          >
-          <img
-            src="./image/world-continents.png"
-            width="320"
-            height="160"
-            orgwidth="320"
-            orgheight="160"
-            usemap="#world-continents"
-          />
-          <map name="world-continents">
-            <area
-              title="North America"
-              href="https://en.wikipedia.org/wiki/North_America"
-              shape="poly"
-              coords="48,89,67,69,77,49,140,0,68,0,6,10,4,31,16,69"
-              target="_blank"
-            />
-            <area
-              title="South America"
-              href="https://en.wikipedia.org/wiki/South_America"
-              shape="poly"
-              coords="48,88,61,74,119,99,95,160,66,159"
-              target="_blank"
-            />
-            <area
-              title="Europe"
-              href="https://en.wikipedia.org/wiki/Europe"
-              shape="poly"
-              coords="124,49,145,46,158,50,187,43,198,6,146,1,115,21"
-              target="_blank"
-            />
-            <area
-              title="Africa"
-              href="https://en.wikipedia.org/wiki/Africa"
-              shape="poly"
-              coords="121,53,140,47,169,51,186,77,196,80,188,137,156,136,138,97,118,86"
-              target="_blank"
-            />
-            <area
-              title="Asia"
-              href="https://en.wikipedia.org/wiki/Asia"
-              shape="poly"
-              coords="166,50,184,77,201,74,215,91,258,108,263,87,283,74,297,8,192,3,191,29,187,46,170,42"
-              target="_blank"
-            />
-            <area
-              title="Australia"
-              href="https://en.wikipedia.org/wiki/Australia_(continent)"
-              shape="poly"
-              coords="257,107,263,85,314,89,316,137,294,151,249,132,248,114"
-              target="_blank"
-            />
-          </map>
-        </div>
-      </section>
-      <section class="section-page">
-        <div class="container">
-          <h2>aside</h2>
-          <p>
-            Defines a block of content that is related to the main content.
-            Displayed as a sidebar usually.
-          </p>
-          <br />
-          <p>Example</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-            obcaecati, eius beatae veniam neque corporis consequuntur delectus,
-            est voluptatum, quidem recusandae consequatur iusto voluptatem
-            maiores earum ullam repudiandae ea doloremque?
-          </p>
-          <aside class="site-bar">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </aside>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-            delectus rerum dolorem dolore, harum facere temporibus magni
-            eligendi, beatae aspernatur accusantium alias voluptatum rem illo
-            similique eos ratione. Possimus, quia.
-          </p>
-        </div>
-      </section>
-      <section class="section-page">
-        <div class="container">
-          <h2 class="title">audio</h2>
-          <audio src="/assets/audio.mp3" controls muted preload></audio>
-        </div>
-      </section>
-      <section class="section-page">
-        <div class="container">
-          <h2 class="title">base</h2>
-          <p>
-            Defines the base URL for all <b>relative</b> relative links of a web
-            page. Should be placed in the tag head
-          </p>
-        </div>
-      </section>
-      <section class="section-page">
-        <div class="container">
-          <h2 class="title">bdi - bidirectional isolation</h2>
-          <p>Allows to display part of a text in the opposite direction.</p>
-          <br />
-          <p>Example</p>
-          <p>
-            The word <b><bdi>שלום</bdi></b> means "Hello" in Hebrew
-          </p>
-        </div>
-      </section>
-      <section class="section-page">
-        <div class="container">
-          <h2 class="title">bdo</h2>
-          <p>Allows to override the direction of text.</p>
-          <br />
-          <p>Example</p>
-          <p>
-            The word <bdo dir="rtl">Hello</bdo> is "Hello" spelled backwards.
-          </p>
-          <p>
-            The word <bdo dir="ltr">Hello</bdo> is "Hello" spelled backwards.
-          </p>
-        </div>
-      </section>
-      <section class="section-page">
-        <div class="container">
-          <h2 class="title">blockquote</h2>
-          <p>Defines a long quotation.</p>
-          <br />
-          <p>Example</p>
-          <figure>
-            <blockquote>
+          <h2 class="visually-hidden">Tags list</h2>
+          <div class="tags-list">
+            <article class="tag">
+              <h2 class="title">a</h2>
               <p>
-                &#171;One never notices what has been done; one can only see
-                what remains to be done.&#187;
+                Creates a link to a
+                <abbr title="Uniform Resource Locator">URL</abbr> : a web page,
+                a section within a page, an email address
               </p>
-            </blockquote>
-            <figcaption>
-              Marie Curie
-              <cite
-                ><a href="http://www.george-orwell.org/1984/0.html"
-                  >Letter to her brother (1894)</a
+
+              <br />
+              <p>Example</p>
+              <p>
+                <a
+                  class="link"
+                  href="https://www.youtube.com/watch?v=tYdbcwTb8Es"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >KALEO - Into My Mother's Arms</a
                 >
-              </cite>
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-      <section class="section-page">
-        <div class="container">
-          <h2 class="title">canvas</h2>
-          <p>Defines an element where you can draw graphics.</p>
-          <br />
-          <p>Example</p>
-          <canvas style="background-color: brown" width="60" height="60">
-            Fallback text for non-supported browsers
-          </canvas>
-        </div>
-      </section>
-      <section class="section-page">
-        <div class="container">
-          <h2 class="title">
-            caption, table, thead, tbody, tfoot, tr, th, td, colgroup
-          </h2>
-          <p><b>caption</b> - defines the title of a table.</p>
-          <p><b>table</b> - defines a container for tabular data.</p>
-          <p>
-            <b>thead</b> - defines a group of table rows tr (tag) at the start
-            of a table.
-          </p>
-          <p><b>tbody</b> - defines a group of table rows tr(tag)</p>
-          <p>
-            <b>tfoot</b> - defines a set of rows summarizing the columns of the
-            table.
-          </p>
-          <p><b>tr</b> - defines a row of cells in a table</p>
-          <p>
-            <b>th</b> - defines a cell as the header of a group of table cells
-          </p>
-          <p><b>td</b> - defines a cell of a table that contains data</p>
-          <p><b>colgroup</b> - defines a group of columns within a table.</p>
-          <p><b>col</b> - defines a column within a table.</p>
-          <br />
-          <p>Example</p>
-          <table class="table">
-            <colgroup>
-              <col style="background-color: hotpink" />
-              <col span="2" style="background-color: springgreen" />
-            </colgroup>
-            <caption>
-              Salary
-            </caption>
-            <thead>
-              <tr>
-                <th rowspan="2">Name</th>
-                <th colspan="2">Sum</th>
-              </tr>
-              <tr>
-                <th>Main</th>
-                <th>Premium</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Ted</td>
-                <td>1000</td>
-                <td>500</td>
-              </tr>
-              <tr>
-                <td>Jack</td>
-                <td>1500</td>
-                <td>500</td>
-              </tr>
-              <tr>
-                <td>Enn</td>
-                <td>2000</td>
-                <td>500</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td>Total</td>
-                <td colspan="2">6000</td>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
-      </section>
-      <section class="section-page">
-        <div class="container">
-          <h2 class="title">code</h2>
-          <p>Defines a snippet of code within a block of text.</p>
-          <br />
-          <p>Example</p>
-          <p>
-            Type
-            <code
-              style="
-                background-color: rgb(194, 192, 192);
-                padding-left: 5px;
-                padding-right: 5px;
-                border-radius: 2px;
-              "
-              >npm install</code
-            >
-            in your terminal to install a project's dependencies.
-          </p>
-        </div>
-      </section>
-      <section class="section-page">
-        <div class="container">
-          <h2 class="title">data</h2>
-          <p>Defines content linked to machine-readable output.</p>
-          <br />
-          <p>Example</p>
-          <p>Computers</p>
-          <ul class="computers-list">
-            <li>
-              <data class="computers-data" value="499">Mini PC</data>
-            </li>
-            <li>
-              <data class="computers-data" value="899">Small laptop</data>
-            </li>
-            <li>
-              <data class="computers-data" value="1399">Large laptop</data>
-            </li>
-            <li>
-              <data class="computers-data" value="2099">Desktop PC</data>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="section-page">
-        <div class="container">
-          <h2 class="title">datalist</h2>
-          <p>
-            Defines a list of autocomplete options when using a text input
-            (tag).
-          </p>
-          <br />
-          <p>Example</p>
-          <label>South American countries</label><br />
-          <input list="countries" placeholder="Type a country" />
-          <datalist id="countries">
-            <option value="Argentina"></option>
-            <option value="Bolivia"></option>
-            <option value="Brazil"></option>
-            <option value="Chile"></option>
-            <option value="Colombia"></option>
-            <option value="Ecuador"></option>
-            <option value="Guyana"></option>
-            <option value="Paraguay"></option>
-            <option value="Peru"></option>
-            <option value="Suriname"></option>
-            <option value="Uruguay"></option>
-            <option value="Venezuela"></option>
-          </datalist>
-        </div>
-      </section>
-      <section class="section-page">
-        <div class="container">
-          <h2 class="title">dl, dt, dd</h2>
-          <p><b>dl</b> - Defines a definition list.</p>
-          <p><b>dt</b> - Defines a definition term.</p>
-          <p><b>dd</b> - Defines an item in a definition list.</p>
-          <br />
-          <p>Example</p>
-          <dl>
-            <dt>Web</dt>
-            <dd>
-              The part of the Internet that contains websites and web pages
-            </dd>
-            <dt>HTML</dt>
-            <dd>A markup language for creating web pages</dd>
-            <dt>CSS</dt>
-            <dd>A technology to make HTML look better</dd>
-          </dl>
+              </p>
+            </article>
+            <article class="tag">
+              <h2 class="title">abbr</h2>
+              <p>
+                Defines an abbreviation, and usually includes its full
+                description.
+              </p>
+              <p>Displays the full description when hovering the element.</p>
+              <br />
+              <p>Example</p>
+              <p>
+                <abbr title="HyperText Markup Language">HTML</abbr>
+              </p>
+            </article>
+            <article class="tag">
+              <h2 class="title">area, map</h2>
+              <p><b>area</b> - defines an interactive area within a map</p>
+              <p><b>map</b> - defines an interactive map over an image</p>
+              <p>
+                <a
+                  class="link"
+                  href="https://css.in.ua/html/tag/area/coords"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Read about coords</a
+                >
+              </p>
+              <br />
+              <p>Example</p>
+              <img
+                src="./image/world-continents.png"
+                width="320"
+                height="160"
+                usemap="#world-continents"
+                alt="map"
+              />
+              <map name="world-continents">
+                <area
+                  title="North America"
+                  href="https://en.wikipedia.org/wiki/North_America"
+                  shape="poly"
+                  coords="48,89,67,69,77,49,140,0,68,0,6,10,4,31,16,69"
+                  target="_blank"
+                  alt="map"
+                />
+                <area
+                  title="South America"
+                  href="https://en.wikipedia.org/wiki/South_America"
+                  shape="poly"
+                  coords="48,88,61,74,119,99,95,160,66,159"
+                  target="_blank"
+                  alt="map"
+                />
+                <area
+                  title="Europe"
+                  href="https://en.wikipedia.org/wiki/Europe"
+                  shape="poly"
+                  coords="124,49,145,46,158,50,187,43,198,6,146,1,115,21"
+                  target="_blank"
+                  alt="map"
+                />
+                <area
+                  title="Africa"
+                  href="https://en.wikipedia.org/wiki/Africa"
+                  shape="poly"
+                  coords="121,53,140,47,169,51,186,77,196,80,188,137,156,136,138,97,118,86"
+                  target="_blank"
+                  alt="map"
+                />
+                <area
+                  title="Asia"
+                  href="https://en.wikipedia.org/wiki/Asia"
+                  shape="poly"
+                  coords="166,50,184,77,201,74,215,91,258,108,263,87,283,74,297,8,192,3,191,29,187,46,170,42"
+                  target="_blank"
+                  alt="map"
+                />
+                <area
+                  title="Australia"
+                  href="https://en.wikipedia.org/wiki/Australia_(continent)"
+                  shape="poly"
+                  coords="257,107,263,85,314,89,316,137,294,151,249,132,248,114"
+                  target="_blank"
+                  alt="map"
+                />
+              </map>
+            </article>
+            <article class="tag">
+              <h2 class="title">article</h2>
+              <p>
+                Defines a self-contained block of content that can exist in any
+                context. It can have its own header, footer, sections... Useful
+                for a list of blog posts.
+              </p>
+              <br />
+              <p>Example</p>
+              <article>
+                <header>
+                  <h3>My blog post</h3>
+                </header>
+                <section>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec viverra nec nulla vitae mollis.
+                  </p>
+                </section>
+                <footer>
+                  <p><time datetime="2023-06-09T12:54">2023/06/09</time></p>
+                </footer>
+              </article>
+            </article>
+            <article class="tag">
+              <h2 class="title">address</h2>
+              <p>Defines a block for contact information.</p>
+              <br />
+              <p>Example</p>
+              <address>
+                12v Metalistiv ST,<br />
+                Kyiv,<br />
+                03057, <br />
+                Ukraine
+              </address>
+            </article>
+            <article class="tag">
+              <h2 class="title">aside</h2>
+              <p>
+                Defines a block of content that is related to the main content.
+                Displayed as a sidebar usually.
+              </p>
+              <br />
+              <p>Example</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                obcaecati, eius beatae veniam neque corporis consequuntur
+                delectus, est voluptatum, quidem recusandae consequatur iusto
+                voluptatem maiores earum ullam repudiandae ea doloremque?
+              </p>
+              <aside class="site-bar">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </aside>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                delectus rerum dolorem dolore, harum facere temporibus magni
+                eligendi, beatae aspernatur accusantium alias voluptatum rem
+                illo similique eos ratione. Possimus, quia.
+              </p>
+            </article>
+            <article class="tag">
+              <h2 class="title">audio</h2>
+              <p>
+                Allows to embed an audio clip into a web page.
+                <a
+                  class="link"
+                  href="https://htmlreference.io/element/audio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Read more</a
+                >
+              </p>
+              <br />
+              <p>Example</p>
+              <audio src="/assets/audio.mp3" controls muted preload></audio>
+            </article>
+            <article class="tag">
+              <h2 class="title">base</h2>
+              <p>
+                Defines the base URL for all <b>relative</b> relative links of a
+                web page. Should be placed in the tag head
+              </p>
+              <br />
+              <p>Example</p>
+              <img src="./image/base-example.png" alt="exaple code" />
+            </article>
+            <article class="tag">
+              <h2 class="title">bdi - bidirectional isolation</h2>
+              <p>Allows to display part of a text in the opposite direction.</p>
+              <br />
+              <p>Example</p>
+              <p>
+                The word <b><bdi>שלום</bdi></b> means "Hello" in Hebrew
+              </p>
+            </article>
+            <article class="tag">
+              <h2 class="title">bdo</h2>
+              <p>Allows to override the direction of text.</p>
+              <br />
+              <p>Example</p>
+              <p>
+                The word <bdo dir="rtl">Hello</bdo> is "Hello" spelled
+                backwards.
+              </p>
+              <p>
+                The word <bdo dir="ltr">Hello</bdo> is "Hello" spelled
+                backwards.
+              </p>
+            </article>
+            <article class="tag">
+              <h2 class="title">blockquote</h2>
+              <p>Defines a long quotation.</p>
+              <br />
+              <p>Example</p>
+              <figure>
+                <blockquote>
+                  <p>
+                    &#171;One never notices what has been done; one can only see
+                    what remains to be done.&#187;
+                  </p>
+                </blockquote>
+                <figcaption>
+                  Marie Curie
+                  <cite
+                    ><a href="http://www.george-orwell.org/1984/0.html"
+                      >Letter to her brother (1894)</a
+                    >
+                  </cite>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="tag">
+              <h2 class="title">canvas</h2>
+              <p>Defines an element where you can draw graphics.</p>
+              <br />
+              <p>Example</p>
+              <canvas style="background-color: brown" width="60" height="60">
+                Fallback text for non-supported browsers
+              </canvas>
+            </article>
+            <article class="tag">
+              <h2 class="title">
+                caption, table, thead, tbody, tfoot, tr, th, td, colgroup
+              </h2>
+              <p><b>caption</b> - defines the title of a table.</p>
+              <p><b>table</b> - defines a container for tabular data.</p>
+              <p>
+                <b>thead</b> - defines a group of table rows tr (tag) at the
+                start of a table.
+              </p>
+              <p><b>tbody</b> - defines a group of table rows tr(tag)</p>
+              <p>
+                <b>tfoot</b> - defines a set of rows summarizing the columns of
+                the table.
+              </p>
+              <p><b>tr</b> - defines a row of cells in a table</p>
+              <p>
+                <b>th</b> - defines a cell as the header of a group of table
+                cells
+              </p>
+              <p><b>td</b> - defines a cell of a table that contains data</p>
+              <p>
+                <b>colgroup</b> - defines a group of columns within a table.
+              </p>
+              <p><b>col</b> - defines a column within a table.</p>
+              <br />
+              <p>Example</p>
+              <table class="table">
+                <caption>
+                  Salary
+                </caption>
+                <colgroup>
+                  <col style="background-color: hotpink" />
+                  <col span="2" style="background-color: springgreen" />
+                </colgroup>
+
+                <thead>
+                  <tr>
+                    <th rowspan="2">Name</th>
+                    <th colspan="2">Sum</th>
+                  </tr>
+                  <tr>
+                    <th>Main</th>
+                    <th>Premium</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ted</td>
+                    <td>1000</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>Jack</td>
+                    <td>1500</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>Enn</td>
+                    <td>2000</td>
+                    <td>500</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td>Total</td>
+                    <td colspan="2">6000</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </article>
+            <article class="tag">
+              <h2 class="title">code</h2>
+              <p>Defines a snippet of code within a block of text.</p>
+              <br />
+              <p>Example</p>
+              <p>
+                Type
+                <code>npm install</code>
+                in your terminal to install a project's dependencies.
+              </p>
+            </article>
+            <article class="tag">
+              <h2 class="title">datalist</h2>
+              <p>
+                Defines a list of autocomplete options when using a text input
+                (tag).
+              </p>
+              <br />
+              <p>Example</p>
+              <label>South American countries</label><br />
+              <input list="countries" placeholder="Type a country" />
+              <datalist id="countries">
+                <option value="Argentina"></option>
+                <option value="Bolivia"></option>
+                <option value="Brazil"></option>
+                <option value="Chile"></option>
+                <option value="Colombia"></option>
+                <option value="Ecuador"></option>
+                <option value="Guyana"></option>
+                <option value="Paraguay"></option>
+                <option value="Peru"></option>
+                <option value="Suriname"></option>
+                <option value="Uruguay"></option>
+                <option value="Venezuela"></option>
+              </datalist>
+            </article>
+            <article class="tag">
+              <h2 class="title">data</h2>
+              <p>Defines content linked to machine-readable output.</p>
+              <p>The value is displayed when hovering</p>
+              <br />
+              <p>Example</p>
+              <p>Computers</p>
+              <ul class="computers-list">
+                <li>
+                  <data class="computers-data" value="499">Mini PC</data>
+                </li>
+                <li>
+                  <data class="computers-data" value="899">Small laptop</data>
+                </li>
+                <li>
+                  <data class="computers-data" value="1399">Large laptop</data>
+                </li>
+                <li>
+                  <data class="computers-data" value="2099">Desktop PC</data>
+                </li>
+              </ul>
+            </article>
+            <article class="tag">
+              <h2 class="title">dl, dt, dd</h2>
+              <p><b>dl</b> - Defines a definition list.</p>
+              <p><b>dt</b> - Defines a definition term.</p>
+              <p><b>dd</b> - Defines an item in a definition list.</p>
+              <br />
+              <p>Example</p>
+              <dl>
+                <dt>Web</dt>
+                <dd>
+                  The part of the Internet that contains websites and web pages
+                </dd>
+                <dt>HTML</dt>
+                <dd>A markup language for creating web pages</dd>
+                <dt>CSS</dt>
+                <dd>A technology to make HTML look better</dd>
+              </dl>
+            </article>
+            <article class="tag">
+              <h2 class="title">dfn</h2>
+              <p>
+                Defines where a term is defined within a web page. Сan be used
+                with <code>&lt;abbr&gt;</code>.
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Read more</a
+                >
+              </p>
+              <br />
+              <p>Example</p>
+              <p>
+                A <dfn id="def-validator">validator</dfn> is a program that
+                checks for syntax errors in code or documents.
+              </p>
+            </article>
+            <article class="tag">
+              <h2 class="title">div</h2>
+              <p>
+                Defines a generic block of content, that does not carry any
+                semantic value. Used for layout elements like containers.
+              </p>
+
+              <br />
+              <p>Example.</p>
+              <code
+                >&lt;div
+                class="container"&gt;&lt;p&gt;Test&lt;/p&gt;&lt;/div&gt;</code
+              >
+            </article>
+            <article class="tag">
+              <h2 class="title">em</h2>
+              <p>
+                Defines emphasis on text. Is usually rendered as italic text.
+              </p>
+              <br />
+              <p>Example</p>
+              <p>We <em>had</em> to do something about it.</p>
+            </article>
+            <article class="tag">
+              <h2 class="title">fieldset, legend</h2>
+              <p><b>fildset</b> - defines a group of controls within a form.</p>
+              <p><b>legend</b> - defines a caption for a parent's content.</p>
+
+              <br />
+              <p>Example</p>
+              <form>
+                <fieldset>
+                  <legend>Subscribe</legend>
+                  <input type="email" name="email" />
+                  <button type="submit">ok</button>
+                </fieldset>
+              </form>
+            </article>
+            <article class="tag">
+              <h2 class="title">figure, figcaption, img</h2>
+              <p>
+                <b>figure</b> - defines a single self-contained element, usually
+                an image.
+              </p>
+              <p>
+                <b>figcaption</b> - defines the caption of a
+                <code>&lt;figure&gt;</code>
+              </p>
+              <p><b>img</b> - defines an image inserted in the web page.</p>
+
+              <br />
+              <p>Example</p>
+              <figure>
+                <img src="./image//spider.jpg" alt="spider" width="500" />
+                <figcaption>Peacock spider</figcaption>
+              </figure>
+            </article>
+            <article class="tag">
+              <h2 class="title">
+                form, label, input, select, option, optgroup
+              </h2>
+              <p><b>form</b> - defines an interactive form with controls.</p>
+              <p><b>label</b>- defines a label for a form control.</p>
+              <p>
+                <b>input</b> - defines an interactive control within a web form.
+                <a
+                  class="link"
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Read more</a
+                >
+              </p>
+              <p>
+                <b>select</b> - defines a select dropdown with different
+                <code>&lt;option&gt;</code> elements.
+              </p>
+              <p>
+                <b>option</b> - defines an option within a
+                <code>&lt;select&gt;</code>dropdown.
+              </p>
+              <p>
+                <b>optgroup</b> -defines a group of
+                <code>&lt;option&gt;</code>elements.
+              </p>
+              <br />
+              <p>Example</p>
+              <form class="user-form" method="post">
+                <label class="user-form-label"
+                  >Name<input type="text" name="name"
+                /></label>
+                <label class="user-form-label"
+                  >Email<input type="email" name="email"
+                /></label>
+                <label class="user-form-label"
+                  >Favorite film
+                  <select name="type">
+                    <optgroup label="Ukrainian">
+                      <option value="the forest song">The Forest Song</option>
+                      <option value="klondike">Klondike</option>
+                    </optgroup>
+                    <optgroup label="Foreign">
+                      <option value=" the lord of the rings">
+                        The Lord of the Rings
+                      </option>
+                      <option value="speed">Speed</option>
+                    </optgroup>
+                  </select>
+                </label>
+                <fieldset>
+                  <legend>Gender</legend>
+                  <label class="user-form-label"
+                    ><input type="radio" name="gender" />woman</label
+                  >
+                  <label class="user-form-label"
+                    ><input type="radio" name="gender" />men</label
+                  >
+                </fieldset>
+                <button type="submit" disabled>Submit</button>
+              </form>
+            </article>
+            <article class="tag">
+              <h2 class="title">footer</h2>
+              <p>Defines the footer of a web page or section.</p>
+            </article>
+            <article class="tag">
+              <h2 class="title">hr</h2>
+              <p>
+                Defines a semantic break between blocks of text. It is often
+                represented as a horizontal rule.
+              </p>
+              <br />
+              <p>Example</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                viverra nec nulla vitae mollis.
+              </p>
+              <hr />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                viverra nec nulla vitae mollis.
+              </p>
+            </article>
+            <article class="tag">
+              <h2 class="title">head</h2>
+              <p>Defines a container for a web page&apos;s metadata.</p>
+            </article>
+            <article class="tag">
+              <h2 class="title">html</h2>
+              <p>
+                Defines the root element of an HTML document. All other elements
+                must be contained within this root element.
+              </p>
+            </article>
+            <article class="tag">
+              <h2 class="title">i</h2>
+              <p>Makes an element italic.</p>
+              <br />
+              <p>Example</p>
+              <p>
+                The definite article <i>the</i> is the most frequent word in
+                English.
+              </p>
+            </article>
+            <article class="tag">
+              <h2 class="title">iframe</h2>
+              <p>
+                Defines a container for a nested browsing context: you can
+                include a web page within another web page.
+              </p>
+              <br />
+              <p>Example</p>
+              <iframe
+                width="500"
+                height="250"
+                src="https://www.youtube.com/embed/5qkzwG2lLPc"
+                title="Peacock spiders, dance for your life! - BBC"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </article>
+            <article class="tag">
+              <h2 class="title">kbd</h2>
+              <p>Defines a snippet of user input.</p>
+              <br />
+              <p>Example</p>
+              <p>To copy, press <kbd>ctrl + c</kbd></p>
+              <p>To paste the copied fragment, press <kbd>ctrl + v</kbd></p>
+            </article>
+            <article class="tag">
+              <h2 class="title">ul, ol, li</h2>
+              <p><b>ul</b> - defines an unordered list.</p>
+              <p>
+                <b>ol</b> - defines an ordered list. Attributes: start, type,
+                reversed
+              </p>
+              <p>
+                <b>li</b> - defines a list item within an ordered list
+                <code>&lt;ol&gt;</code> or unordered list
+                <code>&lt;ul&gt;</code>.
+              </p>
+              <br />
+              <p>Example</p>
+              <ol start="2">
+                <li>Cat</li>
+                <li>Dog</li>
+              </ol>
+              <ol reversed type="I">
+                <li>Cat</li>
+                <li>Dog</li>
+              </ol>
+              <ul type="I">
+                <li>Cat</li>
+                <li>Dog</li>
+              </ul>
+            </article>
+            <article class="tag">
+              <h2 class="title">link</h2>
+              <p>
+                Defines a link between the current web page and an external link
+                or resource.
+              </p>
+
+              <br />
+              <p>Example</p>
+              <code
+                >&lt;link rel=&quot;stylesheet&quot;
+                href=&quot;./css/styles.css&quot; /&gt;</code
+              >
+            </article>
+            <article class="tag">
+              <h2 class="title">main</h2>
+              <p>
+                Defines the main content of a web page. Can be displayed with a
+                sidebar.
+              </p>
+            </article>
+            <article class="tag">
+              <h2 class="title">mark</h2>
+              <p>Defines highlighted text.</p>
+              <br />
+              <p>Example</p>
+              <p>
+                <mark style="background-color: aqua">Peacock spiders</mark> are
+                diurnal cursorial hunters feeding primarily on insects and other
+                spiders.
+              </p>
+            </article>
+            <article class="tag">
+              <h2 class="title">meta</h2>
+              <p>Defines metadata attached to a web page.</p>
+              <br />
+              <p>Example</p>
+              <p><code>&lt;meta charset=&quot;UTF-8&quot; /&gt;</code></p>
+              <p>
+                <code
+                  >&lt;meta http-equiv=&quot;X-UA-Compatible&quot;
+                  content=&quot;IE=edge&quot; /&gt;</code
+                >
+              </p>
+            </article>
+            <article class="tag">
+              <h2 class="title">meter</h2>
+              <p>Defines a horizontal meter.</p>
+              <br />
+              <p>Example</p>
+              <label
+                >Learned material<meter
+                  min="0"
+                  max="100"
+                  low="33"
+                  high="66"
+                  optimum="80"
+                  value="65"
+                >
+                  at 65/100
+                </meter></label
+              >
+            </article>
+            <article class="tag">
+              <h2 class="title">nav</h2>
+              <p>Defines a section with navigation links.</p>
+              <br />
+              <p>Example</p>
+              <nav>
+                <ul style="display: flex; gap: 30px; list-style: none">
+                  <li><a href="./index.html">Home</a></li>
+                  <li>
+                    <a href="./about-html.html">HTML</a>
+                  </li>
+                </ul>
+              </nav>
+            </article>
+            <article class="tag">
+              <h2 class="title">output</h2>
+              <p>Defines the result of a calculation or of user action.</p>
+              <br />
+              <p>Example</p>
+              <form oninput="sum.value = parseInt(a.value) + parseInt(b.value)">
+                <input type="number" name="a" value="0" />
+                +
+                <input type="number" name="b" value="0" />
+                =
+                <output name="sum">0</output>
+              </form>
+            </article>
+            <article class="tag">
+              <h2 class="title">picture, source</h2>
+              <p>
+                <b>picture</b> - defines a container for sources of an
+                <code>&lt;img&gt;</code> element.
+              </p>
+              <p>
+                <b>source</b> - Defines a source for an
+                <code>&lt;audio&gt;</code>, <code>&lt;video&gt;</code>, or
+                <code>&lt;picture&gt;</code> element.
+              </p>
+              <br />
+              <p>Example</p>
+              <picture
+                ><source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./image/img-2x-min.png 2x,
+                    ./image/img-1x-min.png 1x
+                  " />
+                <img src="./image/img-1x-min.png" alt="food"
+              /></picture>
+            </article>
+            <article class="tag">
+              <h2 class="title">pre</h2>
+              <p>Defines preformatted text.</p>
+
+              <br />
+              <p>Example</p>
+              <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello World&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre
+              >
+            </article>
+          </div>
         </div>
       </section>
     </main>

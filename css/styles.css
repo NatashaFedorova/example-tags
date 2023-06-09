@@ -1,7 +1,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #303030;
-  color: #fafafa;
+  color: #fffefe;
 }
 
 p,
@@ -12,13 +12,6 @@ h4,
 h5,
 h6 {
   margin: 0;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding-left: 0;
-  list-style-type: none;
 }
 
 input,
@@ -33,6 +26,34 @@ a {
 
 img {
   display: block;
+}
+
+kbd,
+code {
+  background-color: rgb(194, 192, 192);
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 2px;
+}
+
+.list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -74,20 +95,33 @@ img {
   color: #ff6702;
 }
 
-.main-page {
-  background-color: #fafafa;
-  color: #303030;
-}
-
 .title {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.section-page {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #303030;
+.main-page {
+  background-color: #fafafa;
+  color: #303030;
+}
+
+.about-tags {
+  padding-top: 40px;
+}
+
+.about-tags,
+.tags {
+  padding-bottom: 40px;
+}
+
+.tag:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.tag {
+  padding: 20px;
+  border: 1px solid #303030;
+  border-radius: 8px;
 }
 
 .site-bar {
@@ -122,4 +156,22 @@ th {
 .computers-data:hover::after {
   content: ' (ID ' attr(value) ')';
   font-size: 0.7em;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0 20px 20px;
+  background-color: rgb(211, 157, 157);
+  border: 1px solid rgb(155, 95, 95);
+  border-radius: 8px;
+}
+
+.user-form-label > input {
+  margin-left: 5px;
+}
+.user-form-label > select {
+  margin-left: 5px;
 }
