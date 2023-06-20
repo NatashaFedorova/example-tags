@@ -84,14 +84,12 @@
           <div class="tags-list">
             <article class="tag">
               <h2 class="title">a</h2>
-              <p>
+              <p class="description">
                 Creates a link to a
                 <abbr title="Uniform Resource Locator">URL</abbr> : a web page,
                 a section within a page, an email address
               </p>
-
-              <br />
-              <p>Example</p>
+              <h3 class="tag-example">Example</h3>
               <p>
                 <a
                   class="link"
@@ -104,22 +102,25 @@
             </article>
             <article class="tag">
               <h2 class="title">abbr</h2>
-              <p>
+              <p class="description">
                 Defines an abbreviation, and usually includes its full
-                description.
+                description. Displays the full description when hovering the
+                element.
               </p>
-              <p>Displays the full description when hovering the element.</p>
-              <br />
-              <p>Example</p>
+              <h3>Example</h3>
               <p>
                 <abbr title="HyperText Markup Language">HTML</abbr>
               </p>
             </article>
             <article class="tag">
               <h2 class="title">area, map</h2>
-              <p><b>area</b> - defines an interactive area within a map</p>
-              <p><b>map</b> - defines an interactive map over an image</p>
-              <p>
+              <p class="description">
+                <b>area</b> - defines an interactive area within a map
+              </p>
+              <p class="description">
+                <b>map</b> - defines an interactive map over an image
+              </p>
+              <p class="description">
                 <a
                   class="link"
                   href="https://css.in.ua/html/tag/area/coords"
@@ -128,8 +129,7 @@
                   >Read about coords</a
                 >
               </p>
-              <br />
-              <p>Example</p>
+              <h3>Example</h3>
               <img
                 src="./image/world-continents.png"
                 width="320"
@@ -190,13 +190,12 @@
             </article>
             <article class="tag">
               <h2 class="title">article</h2>
-              <p>
+              <p class="description">
                 Defines a self-contained block of content that can exist in any
                 context. It can have its own header, footer, sections... Useful
                 for a list of blog posts.
               </p>
-              <br />
-              <p>Example</p>
+              <h3>Example</h3>
               <article>
                 <header>
                   <h3>My blog post</h3>
@@ -214,9 +213,10 @@
             </article>
             <article class="tag">
               <h2 class="title">address</h2>
-              <p>Defines a block for contact information.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">
+                Defines a block for contact information.
+              </p>
+              <h3>Example</h3>
               <address>
                 12v Metalistiv ST,<br />
                 Kyiv,<br />
@@ -226,12 +226,11 @@
             </article>
             <article class="tag">
               <h2 class="title">aside</h2>
-              <p>
+              <p class="description">
                 Defines a block of content that is related to the main content.
                 Displayed as a sidebar usually.
               </p>
-              <br />
-              <p>Example</p>
+              <h3>Example</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
                 obcaecati, eius beatae veniam neque corporis consequuntur
@@ -250,7 +249,7 @@
             </article>
             <article class="tag">
               <h2 class="title">audio</h2>
-              <p>
+              <p class="description">
                 Allows to embed an audio clip into a web page.
                 <a
                   class="link"
@@ -260,34 +259,35 @@
                   >Read more</a
                 >
               </p>
-              <br />
-              <p>Example</p>
+              <h3>Example</h3>
               <audio src="/assets/audio.mp3" controls muted preload></audio>
             </article>
             <article class="tag">
               <h2 class="title">base</h2>
-              <p>
+              <p class="description">
                 Defines the base URL for all <b>relative</b> relative links of a
                 web page. Should be placed in the tag head
               </p>
-              <br />
-              <p>Example</p>
+              <h3>Example</h3>
               <img src="./image/base-example.png" alt="exaple code" />
             </article>
             <article class="tag">
               <h2 class="title">bdi - bidirectional isolation</h2>
-              <p>Allows to display part of a text in the opposite direction.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">
+                Allows to display part of a text in the opposite direction.
+              </p>
+
+              <h3>Example</h3>
               <p>
                 The word <b><bdi>שלום</bdi></b> means "Hello" in Hebrew
               </p>
             </article>
             <article class="tag">
               <h2 class="title">bdo</h2>
-              <p>Allows to override the direction of text.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">
+                Allows to override the direction of text.
+              </p>
+              <h3>Example</h3>
               <p>
                 The word <bdo dir="rtl">Hello</bdo> is "Hello" spelled
                 backwards.
@@ -299,9 +299,8 @@
             </article>
             <article class="tag">
               <h2 class="title">blockquote</h2>
-              <p>Defines a long quotation.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">Defines a long quotation.</p>
+              <h3>Example</h3>
               <figure>
                 <blockquote>
                   <p>
@@ -321,9 +320,10 @@
             </article>
             <article class="tag">
               <h2 class="title">canvas</h2>
-              <p>Defines an element where you can draw graphics.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">
+                Defines an element where you can draw graphics.
+              </p>
+              <h3>Example</h3>
               <canvas style="background-color: brown" width="60" height="60">
                 Fallback text for non-supported browsers
               </canvas>
@@ -332,29 +332,40 @@
               <h2 class="title">
                 caption, table, thead, tbody, tfoot, tr, th, td, colgroup
               </h2>
-              <p><b>caption</b> - defines the title of a table.</p>
-              <p><b>table</b> - defines a container for tabular data.</p>
-              <p>
+              <p class="description">
+                <b>caption</b> - defines the title of a table.
+              </p>
+              <p class="description">
+                <b>table</b> - defines a container for tabular data.
+              </p>
+              <p class="description">
                 <b>thead</b> - defines a group of table rows tr (tag) at the
                 start of a table.
               </p>
-              <p><b>tbody</b> - defines a group of table rows tr(tag)</p>
-              <p>
+              <p class="description">
+                <b>tbody</b> - defines a group of table rows tr(tag)
+              </p>
+              <p class="description">
                 <b>tfoot</b> - defines a set of rows summarizing the columns of
                 the table.
               </p>
-              <p><b>tr</b> - defines a row of cells in a table</p>
-              <p>
+              <p class="description">
+                <b>tr</b> - defines a row of cells in a table
+              </p>
+              <p class="description">
                 <b>th</b> - defines a cell as the header of a group of table
                 cells
               </p>
-              <p><b>td</b> - defines a cell of a table that contains data</p>
-              <p>
+              <p class="description">
+                <b>td</b> - defines a cell of a table that contains data
+              </p>
+              <p class="description">
                 <b>colgroup</b> - defines a group of columns within a table.
               </p>
-              <p><b>col</b> - defines a column within a table.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">
+                <b>col</b> - defines a column within a table.
+              </p>
+              <h3>Example</h3>
               <table class="table">
                 <caption>
                   Salary
@@ -401,9 +412,10 @@
             </article>
             <article class="tag">
               <h2 class="title">code</h2>
-              <p>Defines a snippet of code within a block of text.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">
+                Defines a snippet of code within a block of text.
+              </p>
+              <h3>Example</h3>
               <p>
                 Type
                 <code>npm install</code>
@@ -412,12 +424,11 @@
             </article>
             <article class="tag">
               <h2 class="title">datalist</h2>
-              <p>
+              <p class="description">
                 Defines a list of autocomplete options when using a text input
                 (tag).
               </p>
-              <br />
-              <p>Example</p>
+              <h3>Example</h3>
               <label>South American countries</label><br />
               <input list="countries" placeholder="Type a country" />
               <datalist id="countries">
@@ -437,10 +448,11 @@
             </article>
             <article class="tag">
               <h2 class="title">data</h2>
-              <p>Defines content linked to machine-readable output.</p>
-              <p>The value is displayed when hovering</p>
-              <br />
-              <p>Example</p>
+              <p class="description">
+                Defines content linked to machine-readable output.
+              </p>
+              <p class="description">The value is displayed when hovering</p>
+              <h3>Example</h3>
               <p>Computers</p>
               <ul class="computers-list">
                 <li>
@@ -459,11 +471,12 @@
             </article>
             <article class="tag">
               <h2 class="title">dl, dt, dd</h2>
-              <p><b>dl</b> - Defines a definition list.</p>
-              <p><b>dt</b> - Defines a definition term.</p>
-              <p><b>dd</b> - Defines an item in a definition list.</p>
-              <br />
-              <p>Example</p>
+              <p class="description"><b>dl</b> - Defines a definition list.</p>
+              <p class="description"><b>dt</b> - Defines a definition term.</p>
+              <p class="description">
+                <b>dd</b> - Defines an item in a definition list.
+              </p>
+              <h3>Example</h3>
               <dl>
                 <dt>Web</dt>
                 <dd>
@@ -477,7 +490,7 @@
             </article>
             <article class="tag">
               <h2 class="title">dfn</h2>
-              <p>
+              <p class="description">
                 Defines where a term is defined within a web page. Сan be used
                 with <code>&lt;abbr&gt;</code>.
                 <a
@@ -487,8 +500,7 @@
                   >Read more</a
                 >
               </p>
-              <br />
-              <p>Example</p>
+              <h3>Example</h3>
               <p>
                 A <dfn id="def-validator">validator</dfn> is a program that
                 checks for syntax errors in code or documents.
@@ -496,12 +508,10 @@
             </article>
             <article class="tag">
               <h2 class="title">div</h2>
-              <p>
+              <p class="description">
                 Defines a generic block of content, that does not carry any
                 semantic value. Used for layout elements like containers.
               </p>
-
-              <br />
               <p>Example.</p>
               <code
                 >&lt;div
@@ -510,20 +520,21 @@
             </article>
             <article class="tag">
               <h2 class="title">em</h2>
-              <p>
+              <p class="description">
                 Defines emphasis on text. Is usually rendered as italic text.
               </p>
-              <br />
-              <p>Example</p>
+              <h3>Example</h3>
               <p>We <em>had</em> to do something about it.</p>
             </article>
             <article class="tag">
               <h2 class="title">fieldset, legend</h2>
-              <p><b>fildset</b> - defines a group of controls within a form.</p>
-              <p><b>legend</b> - defines a caption for a parent's content.</p>
-
-              <br />
-              <p>Example</p>
+              <p class="description">
+                <b>fildset</b> - defines a group of controls within a form.
+              </p>
+              <p class="description">
+                <b>legend</b> - defines a caption for a parent's content.
+              </p>
+              <h3>Example</h3>
               <form>
                 <fieldset>
                   <legend>Subscribe</legend>
@@ -534,18 +545,18 @@
             </article>
             <article class="tag">
               <h2 class="title">figure, figcaption, img</h2>
-              <p>
+              <p class="description">
                 <b>figure</b> - defines a single self-contained element, usually
                 an image.
               </p>
-              <p>
+              <p class="description">
                 <b>figcaption</b> - defines the caption of a
                 <code>&lt;figure&gt;</code>
               </p>
-              <p><b>img</b> - defines an image inserted in the web page.</p>
-
-              <br />
-              <p>Example</p>
+              <p class="description">
+                <b>img</b> - defines an image inserted in the web page.
+              </p>
+              <h3>Example</h3>
               <figure>
                 <img src="./image//spider.jpg" alt="spider" width="500" />
                 <figcaption>Peacock spider</figcaption>
@@ -555,9 +566,13 @@
               <h2 class="title">
                 form, label, input, select, option, optgroup
               </h2>
-              <p><b>form</b> - defines an interactive form with controls.</p>
-              <p><b>label</b>- defines a label for a form control.</p>
-              <p>
+              <p class="description">
+                <b>form</b> - defines an interactive form with controls.
+              </p>
+              <p class="description">
+                <b>label</b>- defines a label for a form control.
+              </p>
+              <p class="description">
                 <b>input</b> - defines an interactive control within a web form.
                 <a
                   class="link"
@@ -567,20 +582,19 @@
                   >Read more</a
                 >
               </p>
-              <p>
+              <p class="description">
                 <b>select</b> - defines a select dropdown with different
                 <code>&lt;option&gt;</code> elements.
               </p>
-              <p>
+              <p class="description">
                 <b>option</b> - defines an option within a
                 <code>&lt;select&gt;</code>dropdown.
               </p>
-              <p>
+              <p class="description">
                 <b>optgroup</b> -defines a group of
                 <code>&lt;option&gt;</code>elements.
               </p>
-              <br />
-              <p>Example</p>
+              <h3>Example</h3>
               <form class="user-form" method="post">
                 <label class="user-form-label"
                   >Name<input type="text" name="name"
@@ -617,16 +631,17 @@
             </article>
             <article class="tag">
               <h2 class="title">footer</h2>
-              <p>Defines the footer of a web page or section.</p>
+              <p class="description">
+                Defines the footer of a web page or section.
+              </p>
             </article>
             <article class="tag">
               <h2 class="title">hr</h2>
-              <p>
+              <p class="description">
                 Defines a semantic break between blocks of text. It is often
                 represented as a horizontal rule.
               </p>
-              <br />
-              <p>Example</p>
+              <h3>Example</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                 viverra nec nulla vitae mollis.
@@ -639,20 +654,21 @@
             </article>
             <article class="tag">
               <h2 class="title">head</h2>
-              <p>Defines a container for a web page&apos;s metadata.</p>
+              <p class="description">
+                Defines a container for a web page&apos;s metadata.
+              </p>
             </article>
             <article class="tag">
               <h2 class="title">html</h2>
-              <p>
+              <p class="description">
                 Defines the root element of an HTML document. All other elements
                 must be contained within this root element.
               </p>
             </article>
             <article class="tag">
               <h2 class="title">i</h2>
-              <p>Makes an element italic.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">Makes an element italic.</p>
+              <h3>Example</h3>
               <p>
                 The definite article <i>the</i> is the most frequent word in
                 English.
@@ -660,12 +676,11 @@
             </article>
             <article class="tag">
               <h2 class="title">iframe</h2>
-              <p>
+              <p class="description">
                 Defines a container for a nested browsing context: you can
                 include a web page within another web page.
               </p>
-              <br />
-              <p>Example</p>
+              <h3>Example</h3>
               <iframe
                 width="500"
                 height="250"
@@ -678,26 +693,24 @@
             </article>
             <article class="tag">
               <h2 class="title">kbd</h2>
-              <p>Defines a snippet of user input.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">Defines a snippet of user input.</p>
+              <h3>Example</h3>
               <p>To copy, press <kbd>ctrl + c</kbd></p>
               <p>To paste the copied fragment, press <kbd>ctrl + v</kbd></p>
             </article>
             <article class="tag">
               <h2 class="title">ul, ol, li</h2>
-              <p><b>ul</b> - defines an unordered list.</p>
-              <p>
+              <p class="description"><b>ul</b> - defines an unordered list.</p>
+              <p class="description">
                 <b>ol</b> - defines an ordered list. Attributes: start, type,
                 reversed
               </p>
-              <p>
+              <p class="description">
                 <b>li</b> - defines a list item within an ordered list
                 <code>&lt;ol&gt;</code> or unordered list
                 <code>&lt;ul&gt;</code>.
               </p>
-              <br />
-              <p>Example</p>
+              <h3>Example</h3>
               <ol start="2">
                 <li>Cat</li>
                 <li>Dog</li>
@@ -713,13 +726,11 @@
             </article>
             <article class="tag">
               <h2 class="title">link</h2>
-              <p>
+              <p class="description">
                 Defines a link between the current web page and an external link
                 or resource.
               </p>
-
-              <br />
-              <p>Example</p>
+              <h3>Example</h3>
               <code
                 >&lt;link rel=&quot;stylesheet&quot;
                 href=&quot;./css/styles.css&quot; /&gt;</code
@@ -727,16 +738,15 @@
             </article>
             <article class="tag">
               <h2 class="title">main</h2>
-              <p>
+              <p class="description">
                 Defines the main content of a web page. Can be displayed with a
                 sidebar.
               </p>
             </article>
             <article class="tag">
               <h2 class="title">mark</h2>
-              <p>Defines highlighted text.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">Defines highlighted text.</p>
+              <h3>Example</h3>
               <p>
                 <mark style="background-color: aqua">Peacock spiders</mark> are
                 diurnal cursorial hunters feeding primarily on insects and other
@@ -745,9 +755,10 @@
             </article>
             <article class="tag">
               <h2 class="title">meta</h2>
-              <p>Defines metadata attached to a web page.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">
+                Defines metadata attached to a web page.
+              </p>
+              <h3>Example</h3>
               <p><code>&lt;meta charset=&quot;UTF-8&quot; /&gt;</code></p>
               <p>
                 <code
@@ -758,9 +769,8 @@
             </article>
             <article class="tag">
               <h2 class="title">meter</h2>
-              <p>Defines a horizontal meter.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">Defines a horizontal meter.</p>
+              <h3>Example</h3>
               <label
                 >Learned material<meter
                   min="0"
@@ -776,9 +786,10 @@
             </article>
             <article class="tag">
               <h2 class="title">nav</h2>
-              <p>Defines a section with navigation links.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">
+                Defines a section with navigation links.
+              </p>
+              <h3>Example</h3>
               <nav>
                 <ul style="display: flex; gap: 30px; list-style: none">
                   <li><a href="./index.html">Home</a></li>
@@ -790,9 +801,10 @@
             </article>
             <article class="tag">
               <h2 class="title">output</h2>
-              <p>Defines the result of a calculation or of user action.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">
+                Defines the result of a calculation or of user action.
+              </p>
+              <h3>Example</h3>
               <form oninput="sum.value = parseInt(a.value) + parseInt(b.value)">
                 <input type="number" name="a" value="0" />
                 +
@@ -803,17 +815,16 @@
             </article>
             <article class="tag">
               <h2 class="title">picture, source</h2>
-              <p>
+              <p class="description">
                 <b>picture</b> - defines a container for sources of an
                 <code>&lt;img&gt;</code> element.
               </p>
-              <p>
+              <p class="description">
                 <b>source</b> - Defines a source for an
                 <code>&lt;audio&gt;</code>, <code>&lt;video&gt;</code>, or
                 <code>&lt;picture&gt;</code> element.
               </p>
-              <br />
-              <p>Example</p>
+              <h3>Example</h3>
               <picture
                 ><source
                   media="(min-width: 1200px)"
@@ -826,10 +837,8 @@
             </article>
             <article class="tag">
               <h2 class="title">pre</h2>
-              <p>Defines preformatted text.</p>
-
-              <br />
-              <p>Example</p>
+              <p class="description">Defines preformatted text.</p>
+              <h3>Example</h3>
               <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -844,16 +853,14 @@
             </article>
             <article class="tag">
               <h2 class="title">progress</h2>
-              <p>Defines a progress bar.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">Defines a progress bar.</p>
+              <h3>Example</h3>
               <progress value="50" max="100"></progress>
             </article>
             <article class="tag">
               <h2 class="title">q</h2>
-              <p>Defines a short quotation.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">Defines a short quotation.</p>
+              <h3>Example</h3>
               <p>
                 He looks around and says
                 <q cite="https://en.wikiquote.org/wiki/The_Terminator"
@@ -863,13 +870,14 @@
             </article>
             <article class="tag">
               <h2 class="title">rp, rt</h2>
-              <p>
+              <p class="description">
                 <b>rp</b> - defines content displayed when the browser does not
                 support the <code>&lt;ruby&gt;</code> element.
               </p>
-              <p><b>rt</b> - defines the pronunciation of ruby annotations..</p>
-              <br />
-              <p>Example</p>
+              <p class="description">
+                <b>rt</b> - defines the pronunciation of ruby annotations..
+              </p>
+              <h3>Example</h3>
               <ruby>
                 漢 <rp>(</rp><rt>Kan</rt><rp>)</rp> 字 <rp>(</rp><rt>ji</rt
                 ><rp>)</rp>
@@ -877,16 +885,16 @@
             </article>
             <article class="tag">
               <h2 class="title">s</h2>
-              <p>Defines strikethrough text.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">Defines strikethrough text.</p>
+              <h3>Example</h3>
               <p>My favorite color is <s>white</s> grey</p>
             </article>
             <article class="tag">
               <h2 class="title">samp</h2>
-              <p>Defines a sample output from a computer program.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">
+                Defines a sample output from a computer program.
+              </p>
+              <h3>Example</h3>
               <p>
                 I entered <code>git push</code> and the terminal printed out
                 <samp>Everything up-to-date</samp>.
@@ -894,9 +902,8 @@
             </article>
             <article class="tag">
               <h2 class="title">section</h2>
-              <p>Defines a section within a web page.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">Defines a section within a web page.</p>
+              <h3>Example</h3>
               <section>
                 <h2>Section title</h2>
                 <p>
@@ -907,9 +914,10 @@
             </article>
             <article class="tag">
               <h2 class="title">small</h2>
-              <p>Defines small print, for less important content.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">
+                Defines small print, for less important content.
+              </p>
+              <h3>Example</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
                 cupiditate suscipit! Consectetur facilis similique laboriosam
@@ -920,21 +928,19 @@
             </article>
             <article class="tag">
               <h2 class="title">span</h2>
-              <p>
+              <p class="description">
                 Defines a generic inline container of content, that does not
                 carry any semantic value.
               </p>
-              <br />
-              <p>Example</p>
+              <h3>Example</h3>
               <p style="color: blue">
                 <span style="color: yellow">My</span> photo
               </p>
             </article>
             <article class="tag">
               <h2 class="title">strong</h2>
-              <p>Defines strong importance on text.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">Defines strong importance on text.</p>
+              <h3>Example</h3>
               <p>
                 HTML should only be used to write <strong>content</strong>, and
                 keep CSS for <strong>styling</strong> the web page.
@@ -942,16 +948,18 @@
             </article>
             <article class="tag">
               <h2 class="title">sub</h2>
-              <p>Defines text that should be displayed lower.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">
+                Defines text that should be displayed lower.
+              </p>
+              <h3>Example</h3>
               <p>The formula of carbon dioxide is CO<sub>2</sub>.</p>
             </article>
             <article class="tag">
               <h2 class="title">summary, details</h2>
-              <p>Defines the summary of a &lt;details&gt; element.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">
+                Defines the summary of a &lt;details&gt; element.
+              </p>
+              <h3>Example</h3>
               <details>
                 <summary>Read more</summary>
                 <p>
@@ -962,16 +970,18 @@
             </article>
             <article class="tag">
               <h2 class="title">sup</h2>
-              <p>Defines text that should be displayed higher.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">
+                Defines text that should be displayed higher.
+              </p>
+              <h3>Example</h3>
               <p>S = a<sup>2</sup></p>
             </article>
             <article class="tag">
               <h2 class="title">textarea</h2>
-              <p>Defines a multi-line text control within a web form.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">
+                Defines a multi-line text control within a web form.
+              </p>
+              <h3>Example</h3>
               <textarea
                 name="comenth"
                 cols="40"
@@ -985,9 +995,8 @@
             </article>
             <article class="tag">
               <h2 class="title">time</h2>
-              <p>Defines a time on a 24h clock.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">Defines a time on a 24h clock.</p>
+              <h3>Example</h3>
               <p>
                 See you on <time datetime="2023-06-10T17:00"></time> June 10 at
                 5:00 p.m
@@ -995,36 +1004,33 @@
             </article>
             <article class="tag">
               <h2 class="title">title</h2>
-              <p>
+              <p class="description">
                 Defines the title of the web page, displayed on the browser tab.
               </p>
-              <br />
-              <p>Example</p>
+              <h3>Example</h3>
               <code> &lt;title&gt;about-html&lt;/title&gt;</code>
             </article>
             <article class="tag">
               <h2 class="title">u</h2>
-              <p>Makes an element's text underlined.</p>
-              <br />
-              <p>Example</p>
+              <p class="description">Makes an element's text underlined.</p>
+              <h3>Example</h3>
               <p>My name is <u>Ted</u></p>
             </article>
             <article class="tag">
               <h2 class="title">var</h2>
-              <p>
+              <p class="description">
                 Defines a variable in a mathematical or programming expression.
               </p>
-
-              <br />
-              <p>Example</p>
+              <h3>Example</h3>
               <p>A simple equation: <var>x</var> = <var>y</var> + 2</p>
             </article>
             <article class="tag">
               <h2 class="title">video</h2>
-              <p>Allows to embed an video clip into a web page.</p>
+              <p class="description">
+                Allows to embed an video clip into a web page.
+              </p>
 
-              <br />
-              <p>Example</p>
+              <h3>Example</h3>
               <video
                 src="./video/pexels-nst-pictures-2048452-1920x1080-30fps.mp4"
                 poster="./image/img-for-video-min.jpg"
