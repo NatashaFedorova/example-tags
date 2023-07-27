@@ -187,3 +187,20 @@ th {
 .user-form-label > select {
   margin-left: 5px;
 }
+.test-icon {
+  transform: rotate(-90deg);
+}
+.circle {
+  stroke: black;
+  stroke-width: 4;
+  fill: transparent;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim 2250ms linear forwards;
+}
+
+@keyframes timer {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
